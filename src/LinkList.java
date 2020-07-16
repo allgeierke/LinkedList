@@ -48,4 +48,16 @@ class LinkList {
         }
         return list;
     }
+
+    public LinkList reverse() {
+        LinkList newList = new LinkList();
+        Node current = first;
+        while (current!=null) {
+            int value = current.data;
+            int value2 = current.head;
+            newList.insert(value2, value);
+            current = current.next;
+        }
+        return newList;
+    }
 }

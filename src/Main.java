@@ -11,6 +11,10 @@ class Main {
 
         System.out.println(theList.toString());
 
+        theList = theList.reverse();
+
+        System.out.println(theList.toString());
+
         //Testing File-Deleting(top down)
         while( !theList.isEmpty() )
         {
@@ -20,4 +24,5 @@ class Main {
         }
         System.out.println(theList.toString());
     }
+
 }
