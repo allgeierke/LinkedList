@@ -6,38 +6,31 @@ class LinkList {
     }
 
     public boolean isEmpty() {
-        return first == null;
+        if (first != null) {
+            return false;
+        }
+        return true;
     }
 
-    public void insertFirst(int id, double dd) {
-        Node newLink = new Node(id, dd);
+    public void insert(int h, int d) {
+        Node newLink = new Node(h, d);
         newLink.next = first;
         first = newLink;
     }
 
 
-    public Node deleteFirst() {
+    public Node delete() {
         Node temp = first;
         first = first.next;
         return temp;
     }
 
-    public void displayList() {
-        System.out.print("List (first-->last): ");
-        Node current = first;
-        while (current != null) {
-            System.out.print(current.toString() + " ");
-            current = current.next;
-        }
-        System.out.println("");
-    }
-
     public String toString() {
-        System.out.print("List (first-->last); ");
+        System.out.print("List [first to last]: ");
         Node current = first;
         String list = "";
         while (current != null) {
-            list += current.toString();
+            list += current.toString() + " ; ";
             current = current.next;
         }
         return list;

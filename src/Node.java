@@ -1,16 +1,16 @@
 class Node {
-    public int iData;
-    public double dData;
+    public int head;
+    public int data;
     public Node next;
 
-    public Node(int id, double dd) // constructor
+    public Node(int h, int d) // constructor
     {
-    iData = id;
-    dData = dd;
+    head = h;
+    data = d;
     }
 
     public String toString() {
-        return iData + " " + dData;
+        return head + " " + data;
     }
 }
 

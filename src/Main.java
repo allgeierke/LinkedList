@@ -3,19 +3,21 @@ class Main {
     {
         LinkList theList = new LinkList();
 
-        theList.insertFirst(22, 2.99);
-        theList.insertFirst(44, 4.99);
-        theList.insertFirst(66, 6.99);
-        theList.insertFirst(88, 8.99);
+        //Inserting Values
+        theList.insert(22, 2);
+        theList.insert(44, 4);
+        theList.insert(66, 6);
+        theList.insert(88, 8);
 
-        theList.displayList();
+        System.out.println(theList.toString());
 
+        //Testing File-Deleting(top down)
         while( !theList.isEmpty() )
         {
-            Node aLink = theList.deleteFirst();
+            Node aLink = theList.delete();
             System.out.print("Deleted ");
             System.out.println(aLink.toString());
         }
-        theList.displayList();
+        System.out.println(theList.toString());
     }
 }
