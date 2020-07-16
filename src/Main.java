@@ -4,10 +4,10 @@ class Main {
         LinkList theList = new LinkList();
 
         //Inserting Values
-        theList.insert(22, 2);
-        theList.insert(44, 4);
-        theList.insert(66, 6);
-        theList.insert(88, 8);
+        theList.insert(56, 2);
+        theList.insert(37, 4);
+        theList.insert(38, 6);
+        theList.insert(12, 8);
 
         System.out.println(theList.toString());
 

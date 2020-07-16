@@ -3,12 +3,19 @@ class Node {
     public int data;
     public Node next;
 
-    public Node(int h, int d) // constructor
+    /**
+     * Constructor
+     */
+    public Node(int h, int d)
     {
     head = h;
     data = d;
     }
 
+    /**
+     *
+     * @return head + data into a String
+     */
     public String toString() {
         return head + " " + data;
     }
