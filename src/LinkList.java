@@ -1,4 +1,4 @@
-class LinkList {
+class LinkList implements LinkedList {
     private Node first;
 
     public LinkList() {
@@ -19,8 +19,8 @@ class LinkList {
     /**
      * Inserts value into the linkedlist into the top
      */
-    public void insert(int h, int d) {
-        Node newLink = new Node(h, d);
+    public void insert(int d) {
+        Node newLink = new Node(d);
         newLink.next = first;
         first = newLink;
     }
@@ -54,8 +54,7 @@ class LinkList {
         Node current = first;
         while (current!=null) {
             int value = current.data;
-            int value2 = current.head;
-            newList.insert(value2, value);
+            newList.insert(value);
             current = current.next;
         }
         return newList;
