@@ -18,9 +18,7 @@ class Main {
         //Testing File-Deleting(top down)
         while( !theList.isEmpty() )
         {
-            Node aLink = theList.delete();
-            System.out.print("Deleted ");
-            System.out.println(aLink.toString());
+            theList.delete();
         }
         System.out.println(theList.toString());
     }

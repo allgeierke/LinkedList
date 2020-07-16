@@ -29,10 +29,8 @@ class LinkList implements LinkedList {
     /**
      * Deletes the "first" value in the list.
      */
-    public Node delete() {
-        Node temp = first;
+    public void delete() {
         first = first.next;
-        return temp;
     }
 
     /**
